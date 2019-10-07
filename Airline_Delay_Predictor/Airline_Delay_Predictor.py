@@ -110,8 +110,6 @@ dark2_colors = [(0.10588235294117647, 0.6196078431372549, 0.4666666666666667),
 
 
 #building models
-
-
 Ycol = 'DepDelay'
 delay_threshold = 15
 
