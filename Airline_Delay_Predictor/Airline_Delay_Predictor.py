@@ -116,8 +116,6 @@ scaler = StandardScaler()
 X_values = df[df['Origin']=='ORD'][Xcols]
 Y_values = df[df['Origin']=='ORD'][Ycol]
 
-
-
 X_values['UniqueCarrier'] = pd.factorize(X_values['UniqueCarrier'])[0]
 X_values['Dest'] = pd.factorize(X_values['Dest'])[0]
 
@@ -392,16 +390,3 @@ plt.xticks(rotation=90)
 
 remove_border()
 plt.show
-                
-
-
-         
-
-
-
-
-
-
-
-
-
