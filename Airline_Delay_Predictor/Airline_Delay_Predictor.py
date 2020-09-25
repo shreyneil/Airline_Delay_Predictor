@@ -47,7 +47,6 @@ grouped = df1[['DepDelayed', 'DayOfWeek']].groupby('DayOfWeek').mean()
 grouped.plot(kind='bar')
 
 
-
 grouped1 = df1[['DepDelayed', 'Dest']].groupby('Dest').filter(lambda x: len(x)>10)
 grouped2 = grouped1.groupby('Dest').mean()
 grouped2[:15].plot(kind='bar')
