@@ -17,7 +17,6 @@ import seaborn as sns
 
 df = pd.read_csv("2007.csv")
 
-
 #data exploration
 df1 = df[df['Origin']=='ORD'].dropna(subset=['DepDelay'])
 df1['DepDelayed'] = df1['DepDelay'].apply(lambda x:int(x>=15))
