@@ -14,7 +14,6 @@ from sklearn.decomposition import PCA
 from sklearn import linear_model, cross_validation, metrics, svm, ensemble
 import seaborn as sns
 
-
 df = pd.read_csv("2007.csv")
 
 #data exploration
