@@ -46,7 +46,6 @@ grouped = df1[['DepDelayed', 'DayOfWeek']].groupby('DayOfWeek').mean()
 
 grouped.plot(kind='bar')
 
-
 grouped1 = df1[['DepDelayed', 'Dest']].groupby('Dest').filter(lambda x: len(x)>10)
 grouped2 = grouped1.groupby('Dest').mean()
 grouped2[:15].plot(kind='bar')
@@ -103,9 +102,6 @@ dark2_colors = [(0.10588235294117647, 0.6196078431372549, 0.4666666666666667),
                 (0.9019607843137255, 0.6705882352941176, 0.00784313725490196),
                 (0.6509803921568628, 0.4627450980392157, 0.11372549019607843)]
 
-
-
-
 #building models
 Ycol = 'DepDelay'
 delay_threshold = 15
@@ -116,15 +112,12 @@ scaler = StandardScaler()
 X_values = df[df['Origin']=='ORD'][Xcols]
 Y_values = df[df['Origin']=='ORD'][Ycol]
 
-
-
 X_values['UniqueCarrier'] = pd.factorize(X_values['UniqueCarrier'])[0]
 X_values['Dest'] = pd.factorize(X_values['Dest'])[0]
 
 rows = np.random.choice(X_values.index.values, 20000) 
 sampled_X = X_values.ix[rows]
 sampled_Y = Y_values.ix[rows]
-
 
 TrainX, TestX, TrainY, TestY = train_test_split(sampled_X, sampled_Y, 
 test_size=0.50, random_state=0)
@@ -136,8 +129,7 @@ print TestX[pd.isnull(TestX).any(axis=1)].T
 print TrainX[pd.isnull(TrainX).any(axis=1)].T
              
 """
-Minimize chartjunk by stripping out unnecessary plot borders and axis ticks
-    
+Minimize chartjunk by stripping out unnecessary plot borders and axis ticks    
 The top/right/left/bottom keywords toggle whether the corresponding plot border is drawn
 """
 
@@ -165,8 +157,6 @@ def remove_border(axes=None, top=False, right=False, left=True, bottom=True):
 pd.set_option('display.width', 500)
 pd.set_option('display.max_columns', 100)
 
-
-
 #Logistic regresion
 
 def show_confusion_matrix(cm):
@@ -185,8 +175,7 @@ def show_confusion_matrix(cm):
     plt.xlabel('Predicted label')
     # Convenience function to adjust plot parameters for a clear layout.
     plt.show()
-    
-    
+        
 clf_lr = sklearn.linear_model.LogisticRegression(penalty='l2', class_weight='balanced')
 logistic_fit=clf_lr.fit(TrainX, np.where(TrainY >= delay_threshold,1,0))
 pred = clf_lr.predict(TestX)
@@ -324,7 +313,6 @@ for tree in Trees:
     clf = ensemble.RandomForestClassifier(n_estimators=tree, max_features=m, random_state=0,n_jobs=-1)
     clf_scores[cols,:] = cross_validation.cross_val_score(clf, TrainX, np.where(TrainY >= delay_threshold,1,0), cv=cv, scoring = 'accuracy' , n_jobs = -1)
 
-
 plt.subplots(figsize=(10,8))
 score_means = np.mean(clf_scores, axis=1)
 score_std = np.std(clf_scores, axis=1)
@@ -338,8 +326,6 @@ plt.xlabel('Number of trees in the Random Forest')
 plt.xticks(rotation=90)
 remove_border()
 plt.show
-
-
 
 plt.subplots(figsize=(10,8))
 plt.hlines(np.max(score_means),0, 51, linestyle='--', color='red', linewidth=2, alpha=0.7,  zorder = 2, label= 'Maximum of means')
@@ -396,6 +382,12 @@ plt.show
 
 
          
+
+
+
+
+
+
 
 
 
