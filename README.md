@@ -1,11 +1,11 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,8,30&height=200&section=header&text=✈️%20Airline%20Delay%20Predictor&fontSize=38&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=ML-based%20flight%20delay%20prediction%20using%20Logistic%20Regression%20%26%20Random%20Forest&descAlignY=55&descSize=15)
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,8,30&amp;height=200&amp;section=header&amp;text=%E2%9C%88%EF%B8%8F%20Airline%20Delay%20Predictor&amp;fontSize=38&amp;fontColor=fff&amp;animation=fadeIn&amp;fontAlignY=35&amp;desc=ML-based%20flight%20delay%20prediction%20using%20Logistic%20Regression%20%26%20Random%20Forest&amp;descAlignY=55&amp;descSize=15" width="100%" alt="header"/>
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white)](https://python.org)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white)](https://scikit-learn.org)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white)](https://pandas.pydata.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white)](https://jupyter.org)
 
 > *Predict whether your flight will be delayed — before you even get to the airport.*
 
@@ -62,10 +62,10 @@ The model is trained on the **US Airline On-Time Performance** dataset, which in
 | Tool | Purpose |
 |---|---|
 | Python 3 | Core language |
-| Pandas & NumPy | Data processing & feature engineering |
+| Pandas &amp; NumPy | Data processing &amp; feature engineering |
 | scikit-learn | ML models (LogReg, Random Forest) |
-| Matplotlib & Seaborn | Visualizations |
-| Jupyter Notebook | Exploratory analysis & presentation |
+| Matplotlib &amp; Seaborn | Visualizations |
+| Jupyter Notebook | Exploratory analysis &amp; presentation |
 
 ---
 
@@ -112,10 +112,10 @@ Airline_Delay_Predictor/
 
 ## 👨‍💻 Author
 
-**Shreyash Sharma** — PM @ ThoughtSpot · ML hobbyist
+**Shreyash Sharma** — PM2 @ ThoughtSpot · ML hobbyist
 
-[![GitHub](https://img.shields.io/badge/shreyneil-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shreyneil)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shreyash-sharma-b19918117/)
+[![GitHub](https://img.shields.io/badge/shreyneil-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white)](https://github.com/shreyneil)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white)](https://www.linkedin.com/in/shreyash-sharma-b19918117/)
 
 ---
 
@@ -123,6 +123,6 @@ Airline_Delay_Predictor/
 
 *Found this useful? Give it a ⭐ — it helps others discover it!*
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,8,30&height=100&section=footer)
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,8,30&amp;height=100&amp;section=footer" width="100%" alt="footer"/>
 
 </div>
