@@ -1,15 +1,11 @@
-<div align="center">
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,8,30&height=200&section=header&text=✈️%20Airline%20Delay%20Predictor&fontSize=38&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=ML-based%20flight%20delay%20prediction%20using%20Logistic%20Regression%20and%20Random%20Forest&descAlignY=55&descSize=15)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,8,30&amp;height=200&amp;section=header&amp;text=%E2%9C%88%EF%B8%8F%20Airline%20Delay%20Predictor&amp;fontSize=38&amp;fontColor=fff&amp;animation=fadeIn&amp;fontAlignY=35&amp;desc=ML-based%20flight%20delay%20prediction%20using%20Logistic%20Regression%20%26%20Random%20Forest&amp;descAlignY=55&amp;descSize=15" width="100%" alt="header"/>
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white)](https://scikit-learn.org)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white)](https://pandas.pydata.org)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white)](https://jupyter.org)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
 
 > *Predict whether your flight will be delayed — before you even get to the airport.*
-
-</div>
 
 ---
 
@@ -24,11 +20,13 @@ Flight delays cost the US airline industry billions of dollars annually and affe
 The model goes through two classification stages:
 
 ### Stage 1 — Classification (Delayed vs. On-Time)
+
 - **Logistic Regression** — baseline binary classifier
 - **Random Forest** — ensemble approach for improved accuracy and feature importance
 
 ### Stage 2 — Delay Duration Prediction
-- After classifying a flight as delayed, a regression model estimates the expected delay duration in minutes
+
+After classifying a flight as delayed, a regression model estimates the expected delay duration in minutes.
 
 ---
 
@@ -59,24 +57,24 @@ The model is trained on the **US Airline On-Time Performance** dataset, which in
 
 ## 🛠️ Tech Stack
 
-| Tool | Purpose |
-|---|---|
-| Python 3 | Core language |
-| Pandas &amp; NumPy | Data processing &amp; feature engineering |
-| scikit-learn | ML models (LogReg, Random Forest) |
-| Matplotlib &amp; Seaborn | Visualizations |
-| Jupyter Notebook | Exploratory analysis &amp; presentation |
+- **Python 3** — Core language
+- **Pandas, NumPy** — Data processing and feature engineering
+- **scikit-learn** — ML models (Logistic Regression, Random Forest)
+- **Matplotlib, Seaborn** — Visualizations
+- **Jupyter Notebook** — Exploratory analysis and presentation
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 ```
 
 ### Run the Notebook
+
 ```bash
 git clone https://github.com/shreyneil/Airline_Delay_Predictor.git
 cd Airline_Delay_Predictor
@@ -92,12 +90,12 @@ Open `Airline_Delay_Predictor.ipynb` and run all cells.
 ```
 Airline_Delay_Predictor/
 ├── Airline_Delay_Predictor.ipynb   # Main analysis notebook
-├── data/                           # Dataset (not committed — see below)
+├── data/                           # Dataset
 ├── models/                         # Serialized model outputs
 └── README.md
 ```
 
-> **Note:** The dataset is sourced from the [BTS On-Time Performance dataset](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations). Download and place in `/data` before running.
+The dataset is sourced from the [BTS On-Time Performance dataset](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations). Download and place in the `data/` folder before running.
 
 ---
 
@@ -114,15 +112,11 @@ Airline_Delay_Predictor/
 
 **Shreyash Sharma** — PM2 @ ThoughtSpot · ML hobbyist
 
-[![GitHub](https://img.shields.io/badge/shreyneil-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white)](https://github.com/shreyneil)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white)](https://www.linkedin.com/in/shreyash-sharma-b19918117/)
+- [GitHub](https://github.com/shreyneil)
+- [LinkedIn](https://www.linkedin.com/in/shreyash-sharma-b19918117/)
 
 ---
 
-<div align="center">
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,8,30&height=100&section=footer)
 
 *Found this useful? Give it a ⭐ — it helps others discover it!*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,8,30&amp;height=100&amp;section=footer" width="100%" alt="footer"/>
-
-</div>
